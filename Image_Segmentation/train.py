@@ -11,6 +11,7 @@ import torch
 import pandas as pd
 import segmentation_models_pytorch as smp
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 from dataset import (
     SegmentationDataset,
     get_training_augmentation,
@@ -178,7 +179,6 @@ def train_model(
         class_rgb_values (list): RGB values for each class (for multiclass)
         save_dir (str): Directory to save checkpoints
     """
-    from tqdm import tqdm
     
     # Create model
     model_class = getattr(smp, architecture)

@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import segmentation_models_pytorch as smp
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 from dataset import (
     SegmentationDataset,
     get_validation_augmentation,
@@ -157,7 +158,6 @@ def evaluate_model(
     Returns:
         dict: Evaluation metrics
     """
-    from tqdm import tqdm
     
     # Get preprocessing function
     preprocessing_fn = smp.encoders.get_preprocessing_fn(encoder, encoder_weights)

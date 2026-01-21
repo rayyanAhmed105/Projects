@@ -1,0 +1,11 @@
+segmentation-models-pytorch
+torch>=1.9.0
+torchvision>=0.10.0
+albumentations>=1.0.0
+opencv-python-headless
+pandas
+numpy
+matplotlib
+pillow
+tqdm
+scikit-learn

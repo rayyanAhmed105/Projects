@@ -1,9 +1,0 @@
-# Legacy project dependencies. Exact compatible versions depend on the runtime.
-tensorflow
-tensorflow-datasets
-tensorflow-addons
-matplotlib
-numpy
-ipython
-# Install separately:
-# pip install git+https://github.com/tensorflow/examples.git
